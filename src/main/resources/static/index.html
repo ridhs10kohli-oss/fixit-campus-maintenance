@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FixIt | Campus Maintenance</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🔧 <span>FixIt</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+
+       <div class="nav-buttons"> 
+    <button class="login-btn">Login</button>
+    <button class="signup-btn">Get Started</button>
+    <button class="portal-btn admin-portal-btn" id="adminLoginBtn">Admin Portal</button>
+<button class="portal-btn staff-portal-btn" type="button" onclick="openStaffPortal()">Staff Portal</button>
+</div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✨ SMART CAMPUS MAINTENANCE
+            </div>
+
+            <h1>
+                Campus problems?
+                <span>Fix them faster.</span>
+            </h1>
+
+            <p>
+                Report campus issues, track complaints and stay updated
+                until the problem is completely resolved.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn" id="reportBtn">
+                    📝 Report an Issue
+                </button>
+
+                <button class="secondary-btn" id="trackBtn">
+                    🔍 Track Complaint
+                </button>
+
+            </div>
+
+            <div class="trust-text">
+                ✓ Simple &nbsp;&nbsp;
+                ✓ Fast &nbsp;&nbsp;
+                ✓ Transparent
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard Preview -->
+
+        <div class="dashboard-preview">
+
+            <div class="preview-header">
+
+                <div>
+                    <small>Student Dashboard</small>
+                    <h3>My Complaints</h3>
+                </div>
+
+                <div class="profile">
+                    👤
+                </div>
+
+            </div>
+
+
+            <div class="complaint-card">
+
+                <div class="complaint-icon fan">
+                    🌀
+                </div>
+
+                <div class="complaint-info">
+                    <h4>Broken Fan</h4>
+                    <p>Room 101 • Block A</p>
+                </div>
+
+                <span class="status pending">
+                    Pending
+                </span>
+
+            </div>
+
+
+            <div class="complaint-card">
+
+                <div class="complaint-icon light">
+                    💡
+                </div>
+
+                <div class="complaint-info">
+                    <h4>Light Problem</h4>
+                    <p>Room 204 • Block B</p>
+                </div>
+
+                <span class="status progress">
+                    In Progress
+                </span>
+
+            </div>
+
+
+            <div class="complaint-card">
+
+                <div class="complaint-icon wifi">
+                    📶
+                </div>
+
+                <div class="complaint-info">
+                    <h4>Wi-Fi Issue</h4>
+                    <p>Library • Block C</p>
+                </div>
+
+                <span class="status fixed">
+                    Resolved
+                </span>
+
+            </div>
+
+
+            <div class="view-all">
+                View all complaints →
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATISTICS ================= -->
+
+    <section class="stats">
+
+        <div class="stat">
+            <h2>500+</h2>
+            <p>Issues Reported</p>
+        </div>
+
+        <div class="stat">
+            <h2>420+</h2>
+            <p>Issues Resolved</p>
+        </div>
+
+        <div class="stat">
+            <h2>95%</h2>
+            <p>Resolution Rate</p>
+        </div>
+
+        <div class="stat">
+            <h2>24/7</h2>
+            <p>Complaint Tracking</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features" id="features">
+
+        <div class="section-heading">
+
+            <span>FEATURES</span>
+
+            <h2>
+                Everything you need,
+                <strong>in one place.</strong>
+            </h2>
+
+            <p>
+                FixIt makes campus maintenance simple for students,
+                staff and administrators.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+            <!-- Feature 1 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📝
+                </div>
+
+                <h3>Report Issues</h3>
+
+                <p>
+                    Quickly report problems with location,
+                    category, priority and description.
+                </p>
+
+                <a href="#">Report now →</a>
+
+            </div>
+
+
+            <!-- Feature 2 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🔍
+                </div>
+
+                <h3>Track Complaints</h3>
+
+                <p>
+                    See exactly where your complaint is
+                    and follow its progress.
+                </p>
+
+                <a href="#">Track issue →</a>
+
+            </div>
+
+
+            <!-- Feature 3 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📸
+                </div>
+
+                <h3>Upload Photos</h3>
+
+                <p>
+                    Add photos of the problem so maintenance
+                    staff can understand it better.
+                </p>
+
+                <a href="#">Learn more →</a>
+
+            </div>
+
+
+            <!-- Feature 4 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🔔
+                </div>
+
+                <h3>Get Updates</h3>
+
+                <p>
+                    Receive updates whenever your complaint
+                    status changes.
+                </p>
+
+                <a href="#">Stay updated →</a>
+
+            </div>
+
+
+            <!-- Feature 5 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🛠️
+                </div>
+
+                <h3>Quick Resolution</h3>
+
+                <p>
+                    Maintenance staff can manage and resolve
+                    assigned campus issues efficiently.
+                </p>
+
+                <a href="#">Learn more →</a>
+
+            </div>
+
+
+            <!-- Feature 6 -->
+
+            <div class="feature-card ai-card">
+
+                <div class="feature-icon">
+                    🤖
+                </div>
+
+                <h3>AI Assistance</h3>
+
+                <p>
+                    Smart assistance can help categorize
+                    complaints and suggest priority.
+                </p>
+
+                <a href="#">Explore AI →</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section class="how-it-works" id="how-it-works">
+
+        <div class="section-heading">
+
+            <span>HOW IT WORKS</span>
+
+            <h2>
+                Fix a problem in
+                <strong>3 simple steps.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon">
+                    📝
+                </div>
+
+                <h3>Report</h3>
+
+                <p>
+                    Tell us what is wrong and where
+                    the problem is located.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon">
+                    🔍
+                </div>
+
+                <h3>Track</h3>
+
+                <p>
+                    Follow your complaint and see
+                    its current status.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon">
+                    🛠️
+                </div>
+
+                <h3>Resolve</h3>
+
+                <p>
+                    Maintenance staff fixes the issue
+                    and marks it as resolved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= AI SECTION ================= -->
+
+    <section class="ai-section">
+
+        <div class="ai-content">
+
+            <div class="ai-label">
+                🤖 AI-POWERED
+            </div>
+
+            <h2>
+                Smarter complaints.
+                <span>Faster solutions.</span>
+            </h2>
+
+            <p>
+                FixIt can use AI to understand complaints,
+                identify categories and help prioritize
+                maintenance requests.
+            </p>
+
+            <button class="primary-btn">
+                Explore AI Features →
+            </button>
+
+        </div>
+
+
+        <div class="ai-card-preview">
+
+            <div class="ai-top">
+
+                <span>🤖 FixIt AI</span>
+
+                <span class="online">
+                    ● Online
+                </span>
+
+            </div>
+
+
+            <p class="ai-question">
+                "The AC in my classroom is not cooling."
+            </p>
+
+
+            <div class="ai-result">
+
+                <div>
+
+                    <small>
+                        Category
+                    </small>
+
+                    <strong>
+                        ❄️ Air Conditioning
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <small>
+                        Suggested Priority
+                    </small>
+
+                    <strong>
+                        🟠 Medium
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="faq" id="faq">
+
+        <div class="section-heading">
+
+            <span>FAQ</span>
+
+            <h2>
+                Frequently asked questions
+            </h2>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+            <details>
+
+                <summary>
+                    How do I report a campus problem?
+
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Click "Report an Issue", select the problem
+                    category, location and priority, then submit
+                    your complaint.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Can I track my complaint?
+
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Yes. Every complaint receives a unique
+                    complaint ID that can be used to track
+                    its progress.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Can I upload a photo?
+
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Yes. You will be able to attach photos
+                    to help maintenance staff understand
+                    the problem.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Will I know when my issue is resolved?
+
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Yes. Your complaint status will be updated
+                    as the maintenance team works on it.
+                </p>
+
+            </details>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINAL CTA ================= -->
+
+    <section class="final-cta">
+
+        <h2>
+            See something that needs fixing?
+        </h2>
+
+        <p>
+            Report it today and help make your campus better.
+        </p>
+
+        <button class="primary-btn" id="finalReportBtn">
+            📝 Report an Issue
+        </button>
+
+    </section>
+    <!-- ================= REPORT ISSUE FORM ================= -->
+
+<section class="report-section" id="report-section">
+
+    <div class="report-container">
+
+        <div class="report-header">
+            <span>📝 REPORT AN ISSUE</span>
+
+            <h2>What's wrong on campus?</h2>
+
+            <p>
+                Tell us about the problem and we'll help get it fixed.
+            </p>
+        </div>
+
+
+        <form id="complaintForm">
+
+            <div class="form-group">
+
+                <label for="category">
+                    What type of problem?
+                </label>
+
+                <select id="category" required>
+
+                    <option value="">
+                        Select a problem
+                    </option>
+
+                    <option value="Broken Fan">
+                        🌀 Broken Fan
+                    </option>
+
+                    <option value="AC">
+                        ❄️ Air Conditioning
+                    </option>
+
+                    <option value="Lights/Electrical">
+                        💡 Lights / Electrical
+                    </option>
+
+                    <option value="Wi-Fi">
+                        📶 Wi-Fi / Internet
+                    </option>
+
+                    <option value="Furniture">
+                        🪑 Furniture
+                    </option>
+
+                    <option value="Projector/AV">
+                        📽️ Projector / AV
+                    </option>
+
+                    <option value="Water/Plumbing">
+                        🚰 Water / Plumbing
+                    </option>
+
+                    <option value="Other">
+                        🔧 Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="location">
+                    Where is the problem?
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Example: Room 101, Block A"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    How urgent is it?
+                </label>
+
+                <div class="priority-options">
+
+                    <label class="priority-option">
+                        <input
+                            type="radio"
+                            name="priority"
+                            value="LOW"
+                        >
+                        <span>Low</span>
+                    </label>
+
+                    <label class="priority-option">
+                        <input
+                            type="radio"
+                            name="priority"
+                            value="MEDIUM"
+                            checked
+                        >
+                        <span>Medium</span>
+                    </label>
+
+                    <label class="priority-option">
+                        <input
+                            type="radio"
+                            name="priority"
+                            value="HIGH"
+                        >
+                        <span>High</span>
+                    </label>
+
+                    <label class="priority-option">
+                        <input
+                            type="radio"
+                            name="priority"
+                            value="URGENT"
+                        >
+                        <span>Urgent</span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="description">
+                    Describe the problem
+                </label>
+
+                <textarea
+                    id="description"
+                    rows="5"
+                    placeholder="Tell us what happened..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="photo">
+                    📷 Add a photo <small>(optional)</small>
+                </label>
+
+                <input
+                    type="file"
+                    id="photo"
+                    accept="image/*"
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="primary-btn submit-btn"
+            >
+                Submit Complaint
+            </button>
+        </form>
+    </div>
+</section>
+<!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <div class="logo footer-logo">
+                    🔧 FixIt
+                </div>
+
+                <p>
+                    Campus Facilities & Maintenance Platform
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#features">
+                    Features
+                </a>
+
+                <a href="#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 FixIt. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+   
+    <!-- ================= STUDENT AUTH ================= -->
+
+<section class="auth-section" id="auth-section">
+
+    <div class="auth-container">
+
+        <div class="auth-header">
+            <span>🎓 STUDENT PORTAL</span>
+            <h2 id="auth-title">Create Your Account</h2>
+            <p id="auth-subtitle">
+                Register to report and track campus issues.
+            </p>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="registerForm">
+
+            <div class="form-group">
+                <label for="registerName">Full Name</label>
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Enter your name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="registerStudentId">Student ID</label>
+                <input
+                    type="text"
+                    id="registerStudentId"
+                    placeholder="Enter your college ID"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="registerEmail">College Email</label>
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="student@college.edu"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create a password"
+                    required>
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Create Account
+            </button>
+
+        </form>
+
+        <!-- Login Form -->
+        <form id="loginForm" style="display: none;">
+
+            <div class="form-group">
+                <label for="loginEmail">College Email</label>
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="student@college.edu"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required>
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Login
+            </button>
+
+        </form>
+
+        <p class="auth-switch">
+            <span id="auth-switch-text">Already have an account?</span>
+            <button type="button" id="switchAuthBtn">
+                Login
+            </button>
+        </p>
+
+    </div>
+    </section>
+<!-- ================= STUDENT DASHBOARD ================= -->
+
+<section class="dashboard-section" id="student-dashboard">
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-header">
+            <span>🎓 STUDENT DASHBOARD</span>
+            <h2>Welcome to FixIt</h2>
+            <p>Manage your campus complaints from one place.</p>
+        </div>
+
+        <div class="dashboard-cards">
+
+            <button class="dashboard-card" id="dashboardReportBtn">
+                <div class="dashboard-icon">📝</div>
+                <h3>Report an Issue</h3>
+                <p>Submit a new campus complaint.</p>
+            </button>
+
+            <button class="dashboard-card" id="viewComplaintsBtn">
+                <div class="dashboard-icon">📋</div>
+                <h3>My Complaints</h3>
+                <p>View complaints you have submitted.</p>
+            </button>
+
+            <button class="dashboard-card" id="dashboardTrackBtn">
+                <div class="dashboard-icon">🔎</div>
+                <h3>Track Complaint</h3>
+                <p>Check the current status of a complaint.</p>
+            </button>
+
+        </div>
+
+        <div class="student-logout-container">
+            <button
+    id="studentLogoutBtn"
+    style="
+        display: block !important;
+        margin: 25px auto 10px auto !important;
+        padding: 12px 30px !important;
+        background: #ef4444 !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 10px !important;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        font-family: inherit !important;
+        cursor: pointer !important;
+        box-shadow: 0 5px 15px rgba(239, 68, 68, 0.25) !important;
+    "
+>
+    🚪 Logout
+</button>
+        </div>
+
+        <!-- My Complaints -->
+        <div class="my-complaints-container" id="my-complaints-container">
+
+            <div class="my-complaints-header">
+                <h3>📋 My Complaints</h3>
+                <p>View and track all the complaints you have submitted.</p>
+            </div>
+
+            <div id="studentComplaintsList">
+                <p>Your complaints will appear here.</p>
+            </div>
+
+        </div>
+
+        <!-- Track Complaint -->
+        <div class="track-complaint-container" id="track-complaint-container">
+
+            <div class="track-complaint-header">
+                <h3>🔎 Track Complaint</h3>
+                <p>Enter your complaint ID to check its current status.</p>
+            </div>
+
+            <div class="track-complaint-form">
+
+                <input
+                    type="text"
+                    id="trackComplaintId"
+                    placeholder="Enter Complaint ID (e.g. CMP-0003)"
+                >
+
+                <button type="button" id="trackComplaintSubmit">
+                    Track Complaint
+                </button>
+
+            </div>
+
+            <div id="trackComplaintResult"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+       
+
+<!-- ================= ADMIN LOGIN ================= -->
+
+<section class="auth-section" id="admin-auth-section">
+
+    <div class="auth-container">
+
+        <div class="auth-header">
+            <span>🛠️ ADMIN PORTAL</span>
+
+            <h2>Administrator Login</h2>
+
+            <p>
+                Login to manage campus complaints and maintenance.
+            </p>
+        </div>
+
+        <form id="adminLoginForm">
+
+            <div class="form-group">
+                <label for="adminEmail">Admin Email</label>
+
+                <input
+                    type="email"
+                    id="adminEmail"
+                    placeholder="admin@fixit.edu"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="adminPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Enter admin password"
+                    required>
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Login as Admin
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<!-- ================= MAINTENANCE STAFF LOGIN ================= -->
+<section class="auth-section" id="staff-auth-section">
+
+    <div class="auth-container">
+
+        <div class="auth-header">
+
+            <span>🔧 MAINTENANCE STAFF</span>
+
+            <h2>Staff Portal Login</h2>
+
+            <p>
+                Login to view and manage your assigned complaints.
+            </p>
+
+        </div>
+
+        <form id="staffLoginForm">
+
+            <div class="form-group">
+
+                <label for="staffEmail">
+                    Staff Email
+                </label>
+
+                <input
+                    type="email"
+                    id="staffEmail"
+                    placeholder="staff@fixit.edu"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="staffPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="staffPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+            </div>
+
+            <button
+                type="submit"
+                class="primary-btn">
+
+                Login as Staff
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<!-- ================= STAFF DASHBOARD ================= -->
+<section class="dashboard-section" id="staff-dashboard">
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-header">
+
+            <span>🔧 MAINTENANCE STAFF PORTAL</span>
+
+            <h2>Welcome, Maintenance Staff</h2>
+
+            <p>
+                View and manage your assigned complaints.
+            </p>
+
+        </div>
+
+        <div id="staffComplaintsList">
+
+            <p>Loading assigned complaints...</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= ADMIN DASHBOARD ================= -->
+
+<section class="dashboard-section" id="admin-dashboard">
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-header">
+            <span>🛠️ ADMIN DASHBOARD</span>
+            <h2>Complaint Management</h2>
+            <p>View and manage all campus complaints.</p>
+        </div>
+
+        <div id="adminComplaintsList">
+            <p>Loading complaints...</p>
+        </div>
+
+    </div>
+
+</section>
+ <script src="fixit.js"></script>
+</body>
+
+</html>

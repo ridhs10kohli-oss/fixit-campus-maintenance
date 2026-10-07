@@ -1,0 +1,45 @@
+# FixIt Java - Git Ignore File
+
+# Environment Variables & Secrets
+.env
+*.env
+.env.local
+
+# Maven Build Artifacts
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Compiled Class Files
+*.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# Visual Studio Code
+.vscode/
+
+# OS-generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Log files
+*.log

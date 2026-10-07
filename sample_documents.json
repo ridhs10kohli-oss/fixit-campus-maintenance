@@ -1,0 +1,108 @@
+{
+  "students": [
+    {
+      "_id": { "$oid": "6510a1b2c3d4e5f6a7b8c9d0" },
+      "studentId": "STU-2026-001",
+      "name": "Aarav Sharma",
+      "email": "aarav.sharma@college.edu",
+      "password": "studentPassword123",
+      "complaintIds": ["CMP-0001", "CMP-0004"]
+    },
+    {
+      "_id": { "$oid": "6510a1b2c3d4e5f6a7b8c9d1" },
+      "studentId": "STU-2026-002",
+      "name": "Priya Nair",
+      "email": "priya.nair@college.edu",
+      "password": "priyaSecurePass",
+      "complaintIds": ["CMP-0002"]
+    }
+  ],
+  "admins": [
+    {
+      "_id": { "$oid": "6510b2c3d4e5f6a7b8c9d0e1" },
+      "adminId": "ADM-001",
+      "name": "System Administrator",
+      "email": "admin@fixit.edu",
+      "password": "admin123",
+      "department": "Campus Estate & Facilities"
+    }
+  ],
+  "maintenance_staff": [
+    {
+      "_id": { "$oid": "6510c3d4e5f6a7b8c9d0e1f2" },
+      "staffId": "STF-101",
+      "name": "Rajesh Kumar",
+      "email": "rajesh@fixit.edu",
+      "password": "staff123",
+      "specialization": "Electrical & Lighting",
+      "assignedComplaintIds": ["CMP-0001"]
+    },
+    {
+      "_id": { "$oid": "6510c3d4e5f6a7b8c9d0e1f3" },
+      "staffId": "STF-102",
+      "name": "Suresh Sharma",
+      "email": "suresh@fixit.edu",
+      "password": "staff123",
+      "specialization": "Plumbing & Water",
+      "assignedComplaintIds": ["CMP-0002"]
+    },
+    {
+      "_id": { "$oid": "6510c3d4e5f6a7b8c9d0e1f4" },
+      "staffId": "STF-103",
+      "name": "Amit Patel",
+      "email": "amit@fixit.edu",
+      "password": "staff123",
+      "specialization": "HVAC & Air Conditioning",
+      "assignedComplaintIds": []
+    }
+  ],
+  "complaints": [
+    {
+      "_id": { "$oid": "6510d4e5f6a7b8c9d0e1f2a3" },
+      "complaintId": "CMP-0001",
+      "studentId": "STU-2026-001",
+      "category": "Broken Fan",
+      "description": "Ceiling fan regulator sparking and wobbling violently at speed 4.",
+      "location": "Room 302, Academic Block B",
+      "priority": "HIGH",
+      "timestamp": "2026-09-26T14:30:00",
+      "status": "RESOLVED",
+      "assignedStaffId": "STF-101"
+    },
+    {
+      "_id": { "$oid": "6510d4e5f6a7b8c9d0e1f2a4" },
+      "complaintId": "CMP-0002",
+      "studentId": "STU-2026-002",
+      "category": "Water-related Problem",
+      "description": "Restroom tap leaking continuously on the 2nd floor corridor.",
+      "location": "2nd Floor Restroom, Science Wing",
+      "priority": "MEDIUM",
+      "timestamp": "2026-09-26T15:10:00",
+      "status": "IN_PROGRESS",
+      "assignedStaffId": "STF-102"
+    },
+    {
+      "_id": { "$oid": "6510d4e5f6a7b8c9d0e1f2a5" },
+      "complaintId": "CMP-0003",
+      "studentId": "STU-2026-001",
+      "category": "Broken AC",
+      "description": "AC unit producing grinding noise and not blowing cold air during lectures.",
+      "location": "Seminar Hall 1",
+      "priority": "URGENT",
+      "timestamp": "2026-09-26T16:00:00",
+      "status": "PENDING",
+      "assignedStaffId": null
+    }
+  ],
+  "feedback": [
+    {
+      "_id": { "$oid": "6510e5f6a7b8c9d0e1f2a3b4" },
+      "feedbackId": "FB-0001",
+      "complaintId": "CMP-0001",
+      "studentId": "STU-2026-001",
+      "rating": 5,
+      "comment": "Technician Rajesh arrived promptly and replaced the regulator and fan capacitor. Excellent service!",
+      "timestamp": "2026-09-26T18:45:00"
+    }
+  ]
+}
