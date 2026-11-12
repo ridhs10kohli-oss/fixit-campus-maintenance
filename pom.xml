@@ -30,34 +30,52 @@
     </properties>
 
     <dependencies>
-     <!-- Spring Boot Web -->
+    <!-- Spring Boot Web -->
+    <dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>bson-record-codec</artifactId>
+    <version>4.11.1</version>
+    </dependency>
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
     <!-- Dotenv: loads variables from .env file -->
-<dependency>
-    <groupId>io.github.cdimascio</groupId>
-    <artifactId>dotenv-java</artifactId>
-    <version>3.0.0</version>
-</dependency>
-        <!-- Official MongoDB Synchronous Java Driver -->
-        <!-- Official MongoDB Synchronous Java Driver -->
-<dependency>
-    <groupId>org.mongodb</groupId>
-    <artifactId>mongodb-driver-sync</artifactId>
-    <version>4.11.1</version>
-</dependency>
+    <dependency>
+        <groupId>io.github.cdimascio</groupId>
+        <artifactId>dotenv-java</artifactId>
+        <version>3.0.0</version>
+    </dependency>
 
-        <!-- SLF4J Simple Logger (quiets MongoDB INFO logs and keeps console UI clean) -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-    </dependencies>
+    <!-- MongoDB Synchronous Java Driver -->
+    <dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongodb-driver-sync</artifactId>
+        <version>4.11.1</version>
+    </dependency>
 
+    <!-- MongoDB Driver Core -->
+    <dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongodb-driver-core</artifactId>
+        <version>4.11.1</version>
+    </dependency>
+
+    <!-- MongoDB BSON -->
+    <dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>bson</artifactId>
+        <version>4.11.1</version>
+    </dependency>
+
+    <!-- SLF4J Simple Logger -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+</dependencies>
     <build>
         <plugins>
             <!-- Maven Compiler Plugin configured for Java 17 -->
